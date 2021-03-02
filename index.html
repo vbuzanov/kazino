@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazino</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <h4></h4>
+        <p></p>
+    </header>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Комбинация</th>
+                        <th>Описание</th>
+                        <th>Выигрыш</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/pearl.gif" alt="Жемчужина">
+                            <img src="images/pearl.gif" alt="Жемчужина">
+                            <img src="images/pearl.gif" alt="Жемчужина">
+                        </td>
+                        <td>Три жемчужины</td>
+                        <td>800 к 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/shark.gif" alt="Акула">
+                            <img src="images/shark.gif" alt="Акула">
+                            <img src="images/shark.gif" alt="Акула">
+                        </td>
+                        <td>Три акулы</td>
+                        <td>200 к 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/octopus.gif" alt="Осьминог">
+                            <img src="images/octopus.gif" alt="Осьминог">
+                            <img src="images/octopus.gif" alt="Осьминог">
+                        </td>
+                        <td>Три осьминога</td>
+                        <td>80 к 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/fish.gif" alt="Рыба">
+                            <img src="images/fish.gif" alt="Рыба">
+                            <img src="images/fish.gif" alt="Рыба">
+                        </td>
+                        <td>Три рыбы</td>
+                        <td>40 к 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/shell.gif" alt="Ракушка">
+                            <img src="images/shell.gif" alt="Ракушка">
+                            <img src="images/shell.gif" alt="Ракушка">
+                        </td>
+                        <td>Три ракушки</td>
+                        <td>20 к 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/any3x.gif" alt="Any 3x">
+                            <img src="images/star-magenta.gif" alt="Звезда">
+                            <img src="images/star-red.gif" alt="Звезда">
+                        </td>
+                        <td>Три звезды любого цвета</td>
+                        <td>10 к 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/any2x.gif" alt="Any 2x">
+                            <img src="images/star-magenta.gif" alt="Звезда">
+                            <img src="images/star-red.gif" alt="Звезда">
+                        </td>
+                        <td>Две звезды любого цвета</td>
+                        <td>5 к 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/any1x.gif" alt="Any 1x">
+                            <img src="images/star-magenta.gif" alt="Звезда">
+                            <img src="images/star-red.gif" alt="Звезда">
+                        </td>
+                        <td>Одна звезда любого цвета</td>
+                        <td>2 к 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="list">
+            <section>
+                <h2>На Вашем счете:</h2>
+                <p id="money">1000</p>
+                <h2>На кону</h2>
+                <p id="bet">0</p>
+                <button type="button" id="doBet">Сделать ставку</button>
+                <h2>Выигрыш</h2>
+                <p id="prize">0</p>
+            </section>
+            <section id="luck">
+                <div>
+                    <img src="images/pearl.gif" alt="Жемчужина">
+                    <img src="images/star-red.gif" alt="Звезда">
+                    <img src="images/star-magenta.gif" alt="Звезда">
+                </div>
+                <button type="button">Попытать удачу</button>
+            </section>
+        </section>
+        
+        <form name="windBet">
+            <label for="sumBet">Ваша ставка:</label>
+            <input type="number" name="sumBet" id="sumBet">
+            <input type="submit" value="Ввести">
+        </form>
+    </main>
+    <div id="divlog">
+        <form name="loginEnt">
+            <h4>Приветствуем, любитель казино! Как тебя зовут?</h4>
+            <input type="text" name="login" id="login">
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
